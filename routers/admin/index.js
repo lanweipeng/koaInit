@@ -1,0 +1,6 @@
+const Router=require('koa-router');
+let router = new Router();
+router.get('/login',async ctx=>{
+    await ctx.render('admin/login',{})
+})
+module.exports=router.routes();
